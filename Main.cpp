@@ -123,7 +123,7 @@ int main()
                 break;
             case 2:
 
-                d(x, y);
+                direction(x, y);
                 SetConsoleTextAttribute(h, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
                 MenuEditPlan(plans);
                 _getch();
@@ -131,7 +131,7 @@ int main()
                 break;
             case 3:
 
-                d(x, y);
+                direction(x, y);
                 SetConsoleTextAttribute(h, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
                 MenuRemovePlan(plans);
                 _getch();
@@ -139,7 +139,7 @@ int main()
                 break;
             case 4:
 
-                d(x, y);
+                direction(x, y);
                 SetConsoleTextAttribute(h, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
                 MenuSearchDyName(plans);
                 _getch();
@@ -147,7 +147,7 @@ int main()
                 break;
             case 5:
 
-                d(x, y);
+                direction(x, y);
                 SetConsoleTextAttribute(h, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
                 MenuSearchByDate(plans);
                 _getch();
@@ -155,7 +155,7 @@ int main()
                 break;
             case 6:
 
-                d(x, y);
+                direction(x, y);
                 SetConsoleTextAttribute(h, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
                 MenuSearchByDscrb(plans);
                 _getch();
@@ -163,7 +163,7 @@ int main()
                 break;
             case 7:
 
-                d(x, y);
+                direction(x, y);
                 SetConsoleTextAttribute(h, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
                 MenuSearchByPriority(plans);
                 _getch();
@@ -171,7 +171,7 @@ int main()
                 break;
             case 8:
 
-                d(x, y);
+                direction(x, y);
                 SetConsoleTextAttribute(h, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
                 MenuCoutWeek(plans);
                 _getch();
@@ -179,14 +179,14 @@ int main()
                 break;
             case 9:
 
-                d(x, y);
+                direction(x, y);
                 SetConsoleTextAttribute(h, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
                 MenuCoutMonth(plans);
                 _getch();
                 system("CLS");
                 break;
             case 10:
-                d(x, y);
+                direction(x, y);
                 SetConsoleTextAttribute(h, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
                 PlansToday(plans);
                 _getch();
