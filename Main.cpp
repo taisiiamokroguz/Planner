@@ -115,7 +115,7 @@ int main()
                 break;
             case 1:
 
-                direction(x, y);
+                d(x, y);
                 SetConsoleTextAttribute(h, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
                 MenuAddPlan(plans);
                 _getch();
