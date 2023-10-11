@@ -24,7 +24,7 @@ int main()
 {
     SetConsoleTitle(L"Planner");
     system("CLS");
-    setlocale(LC_ALL, "Rus");
+    setlocale(LC_ALL, "UA");
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
     ConsoleCursorVisible(false, 100); //курсор невидимый
@@ -40,11 +40,11 @@ int main()
     newPlan->dateof.tm_sec = 0;
     newPlan->datesec = mktime(&newPlan->dateof);
     newPlan->priority = 1;
-    newPlan->name = new char[strlen("Новый план") + 1];
-    strcpy_s(newPlan->name, strlen("Новый план") + 1, "Новый план");
+    newPlan->name = new char[strlen("Новий план") + 1];
+    strcpy_s(newPlan->name, strlen("Новий план") + 1, "Новий план");
 
-    newPlan->descrb = new char[strlen("Описание нового плана") + 1];
-    strcpy_s(newPlan->descrb, strlen("Описание нового плана") + 1, "Описание нового плана");
+    newPlan->descrb = new char[strlen("Опис нового плана") + 1];
+    strcpy_s(newPlan->descrb, strlen("Опис нового плана") + 1, "Опис нового плана");
     AddPlan(plans, newPlan);
 
     //2 план
@@ -56,12 +56,12 @@ int main()
     newPlan2->dateof.tm_min = 30;
     newPlan2->dateof.tm_sec = 0;
     newPlan2->datesec = mktime(&newPlan2->dateof);
-    newPlan2->name = new char[strlen("Новый план2") + 1];
+    newPlan2->name = new char[strlen("Новий план2") + 1];
     newPlan2->priority = 2;
-    strcpy_s(newPlan2->name, strlen("Новый план2") + 1, "Новый план2");
+    strcpy_s(newPlan2->name, strlen("Новий план2") + 1, "Новий план2");
 
-    newPlan2->descrb = new char[strlen("Описание нового плана2") + 1];
-    strcpy_s(newPlan2->descrb, strlen("Описание нового плана2") + 1, "Описание нового плана2");
+    newPlan2->descrb = new char[strlen("Опис нового плана2") + 1];
+    strcpy_s(newPlan2->descrb, strlen("Опис нового плана2") + 1, "Опис нового плана2");
     AddPlan(plans, newPlan2);
 
 
