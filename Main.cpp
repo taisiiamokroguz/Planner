@@ -5,7 +5,7 @@
 
 HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE); // получение дескриптора
 
-void d(short x, short y) // перемещение курсора по консоли
+void direction(short x, short y) // перемещение курсора по консоли
 {
     SetConsoleCursorPosition(h, { x, y });
 }
@@ -73,13 +73,13 @@ int main()
     do
     {
         char x = 50, y = 12; //начальный координаты для вывода текста на консоль
-        d(x, y);
+        direction(x, y);
 
         for (char i = 0; i < size(T); i++)
         {
             if (i == aT) SetConsoleTextAttribute(h, FOREGROUND_GREEN | FOREGROUND_INTENSITY); //подсвеченый текст
             else SetConsoleTextAttribute(h, FOREGROUND_GREEN); //неподсвеченый
-            d(x, y++); // перемещаемся по оси у
+            direction(x, y++); // перемещаемся по оси у
             cout << T[i] << endl;
         }
 
@@ -107,7 +107,7 @@ int main()
             {
             case 0:
 
-                d(x, y);
+                direction(x, y);
                 SetConsoleTextAttribute(h, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
                 MenuCoutPlans(plans);
                 _getch();
